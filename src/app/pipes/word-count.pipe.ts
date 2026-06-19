@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone: true
 })
 
-export class wordCount implements PipeTransform {
+export class wordCountPipe implements PipeTransform {
   transform(value: string): number { 
     return value.split(' ').length;
    }
