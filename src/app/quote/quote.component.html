@@ -1,0 +1,6 @@
+<div class="quote-card" appHoverHighlight>
+  <p class="quote-text">{{ current().text }}</p>
+  <p class="word-count">Word Count: {{ current().text | wordCount }}</p>
+  <p class="quote-author">{{ current().author }}</p>
+  <button (click)="nextQuote()">Next Quote</button>
+</div>
